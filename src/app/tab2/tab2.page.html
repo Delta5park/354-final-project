@@ -1,0 +1,25 @@
+<ion-content>
+  <ion-card class="welcome-card" style="background-color: #48BED0;">
+    <ion-card-header>
+        <ion-card-title style="color: white; font-size: 20px; text-align: center;">LOGIN</ion-card-title>
+  </ion-card-header>
+  </ion-card>
+  <div class="relative">
+      <ion-input type="Text" style="background: transparent;" placeholder="Enter Username..."><ion-icon ios="md-contact" md="md-contact"></ion-icon></ion-input><br>
+      <ion-input type="Password" style="background: transparent;" placeholder="Enter Password..."><ion-icon ios="md-key" md="md-key"></ion-icon></ion-input><br>
+      <ion-button style="font-weight: bolder;" expand="block" [disabled]="!userForm.valid" (click)="loginForm()">Login</ion-button><br><br><br><br><br>
+      <a href="resetpassword" style="bottom: 0%; text-align: center; float: center; font-size:16px; color: #7AB7C9; font-family: monospace; font-weight: bold;">Forgot Password?</a><br>
+      <h5 style="bottom: 0%; font-family: monospace; color: black; text-align: center;">Don't have an Account?<a href="register" style="bottom: 0%; text-align: center; float: center; font-size:16px; color: #7AB7C9; font-family: monospace; font-weight: bold;">Sign Up</a></h5>
+  </div>
+  <ion-fab vertical="bottom" horizontal="start" slot="fixed">
+      <a href="maintain"><ion-fab-button>
+       <ion-icon style="color: white; background: #E4A208;" name="construct"></ion-icon>
+      </ion-fab-button></a>
+      </ion-fab>
+      <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+          <a href="/tabs/tab2"><ion-fab-button>
+           <ion-icon style="color: white; background: #E43508;" name="close"></ion-icon>
+          </ion-fab-button></a>
+          </ion-fab>
+
+</ion-content>

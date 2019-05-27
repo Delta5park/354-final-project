@@ -1,0 +1,22 @@
+<ion-content>
+  <ion-card class="welcome-card" style="background-color: #48BED0;">
+    <ion-card-header>
+        <ion-card-title style="color: white; font-size: 20px; text-align: center;">MAINTAIN JOURNAL</ion-card-title>
+  </ion-card-header>
+  </ion-card>
+  <div class="relative">
+    <ion-input type="Text" style="background: transparent;" placeholder="Enter Title..."><ion-icon ios="ios-book" md="ios-book"></ion-icon></ion-input><br>
+    <ion-input type="Text" style="background: transparent;" placeholder="Enter Notes..."><ion-icon ios="ios-book" md="ios-book"></ion-icon></ion-input><br>
+    <ion-button style="font-weight: bolder;" expand="block" [disabled]="!userForm.valid" (click)="loginForm()">Save Changes</ion-button>
+  </div>
+  <ion-fab vertical="bottom" horizontal="start" slot="fixed">
+    <a href="/tabs/tab1"><ion-fab-button>
+     <ion-icon style="color: white; background: #E43508;" name="ios-arrow-back"></ion-icon>
+     </ion-fab-button></a>
+  </ion-fab>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <a href="/tabs/tab4"><ion-fab-button>
+     <ion-icon style="color: white; background: #E43508;" name="ios-trash"></ion-icon>
+     </ion-fab-button></a>
+  </ion-fab>
+</ion-content>

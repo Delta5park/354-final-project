@@ -1,0 +1,26 @@
+<ion-content>
+  <ion-card class="welcome-card" style="background-color: #48BED0;">
+    <ion-card-header>
+        <ion-card-title style="color: white; font-size: 20px; text-align: center;">MAINTAIN PROFILE</ion-card-title>
+  </ion-card-header>
+  </ion-card>
+  <div class="relative">
+      <ion-input type="Text" style="background: transparent;" placeholder="Enter Username..."><ion-icon ios="md-contact" md="md-contact"></ion-icon></ion-input><br>
+      <ion-input type="Password" style="background: transparent;" placeholder="Enter Password..."><ion-icon ios="md-key" md="md-key"></ion-icon></ion-input><br>
+      <ion-input type="Email" style="background: transparent;" placeholder="Enter Email..."><ion-icon ios="md-mail" md="md-mail"></ion-icon></ion-input><br>
+      <ion-button style="font-weight: bolder;" expand="block" [disabled]="!userForm.valid" (click)="loginForm()">Apply Changes</ion-button><br><br><br>
+      
+  </div>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <a href="#"><ion-fab-button>
+     <ion-icon style="color: white; background: #E43508;" name="ios-trash"></ion-icon>
+    </ion-fab-button></a>
+    </ion-fab>
+
+  <ion-fab vertical="bottom" horizontal="start" slot="fixed">
+      <a href="/tabs/tab1"><ion-fab-button>
+       <ion-icon style="color: white; background: #E43508;" name="ios-arrow-back"></ion-icon>
+      </ion-fab-button></a>
+      </ion-fab>
+ 
+</ion-content>

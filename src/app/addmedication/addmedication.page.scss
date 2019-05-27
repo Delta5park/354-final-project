@@ -1,0 +1,36 @@
+div.relative{
+    position: relative;
+    top: 11%;
+  }
+  
+  
+  ion-input {
+    left: 23%;
+    box-align: center;
+    color: #48BED0;
+    background-color: #48BED0;
+    fill: #48BED0;
+    width: 60%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color:transparent;
+    background-position-x: 70px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    vertical-align: 50%;
+  }
+  
+  
+  ion-icon {
+    color: #48BED0;
+    zoom: 2;
+  }
+  
+  ion-button {
+    position: absolute;
+    left: 0;
+    right: 0;
+  } 
